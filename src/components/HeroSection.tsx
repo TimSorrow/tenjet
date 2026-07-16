@@ -11,14 +11,13 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full h-[95vh] min-h-[700px] overflow-hidden flex items-center bg-transparent"
+      className="relative w-full h-[95vh] min-h-[700px] overflow-hidden flex items-center justify-center bg-transparent"
     >
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-20 flex items-center justify-start">
+      <div className="relative z-20 flex flex-col items-center justify-center px-4">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9, x: -30 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", stiffness: 100, damping: 15 }}
-          className="pl-2 sm:pl-8 lg:pl-16"
         >
           <a
             href="#booking"
