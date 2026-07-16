@@ -8,8 +8,11 @@
 
   --color-primary: #00658d;
   --color-primary-container: #00baff;
+  --color-cyan-glow: #00baff;
   --color-primary-fixed: #c6e7ff;
+  --color-blue-fixed: #c6e7ff;
   --color-primary-fixed-dim: #81cfff;
+  --color-blue-fixed-dim: #81cfff;
   --color-on-primary: #ffffff;
   --color-on-primary-container: #004764;
   --color-on-primary-fixed: #001e2d;
@@ -17,6 +20,7 @@
 
   --color-secondary: #b3272e;
   --color-secondary-container: #fc5d5d;
+  --color-coral-glow: #fc5d5d;
   --color-secondary-fixed: #ffdad7;
   --color-secondary-fixed-dim: #ffb3af;
   --color-on-secondary: #ffffff;

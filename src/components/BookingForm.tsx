@@ -113,9 +113,9 @@ export const BookingForm = () => {
   };
 
   return (
-    <section id="booking" className="py-24 bg-gradient-to-b from-ocean-deep to-ocean-dark relative overflow-hidden">
+    <section id="booking" className="py-24 bg-transparent relative overflow-hidden">
       {/* Decorative Blur */}
-      <div className="absolute top-[40%] left-[5%] w-[350px] h-[350px] bg-gradient-to-tr from-neon-orange/5 to-transparent rounded-full filter blur-[100px] pointer-events-none" />
+      <div className="absolute top-[40%] left-[5%] w-[350px] h-[350px] bg-gradient-to-tr from-coral-glow/5 to-transparent rounded-full filter blur-[100px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -154,8 +154,8 @@ export const BookingForm = () => {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      className={`px-4 py-3 rounded-xl bg-ocean-dark/80 border text-white focus:outline-none focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium ${
-                        formErrors.fullName ? "border-red-500" : "border-gray-800 focus:border-neon-orange"
+                      className={`px-4 py-3 rounded-xl bg-black/40 border text-white focus:outline-none focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium ${
+                        formErrors.fullName ? "border-red-500" : "border-white/10 focus:border-cyan-glow"
                       }`}
                       placeholder="e.g. John Doe"
                     />
@@ -178,8 +178,8 @@ export const BookingForm = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`px-4 py-3 rounded-xl bg-ocean-dark/80 border text-white focus:outline-none focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium ${
-                        formErrors.phone ? "border-red-500" : "border-gray-800 focus:border-neon-orange"
+                      className={`px-4 py-3 rounded-xl bg-black/40 border text-white focus:outline-none focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium ${
+                        formErrors.phone ? "border-red-500" : "border-white/10 focus:border-cyan-glow"
                       }`}
                       placeholder="e.g. +44 7911 123456"
                     />
@@ -202,8 +202,8 @@ export const BookingForm = () => {
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
-                      className={`px-4 py-3 rounded-xl bg-ocean-dark/80 border text-white focus:outline-none focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium ${
-                        formErrors.date ? "border-red-500" : "border-gray-800 focus:border-neon-orange"
+                      className={`px-4 py-3 rounded-xl bg-black/40 border text-white focus:outline-none focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium ${
+                        formErrors.date ? "border-red-500" : "border-white/10 focus:border-cyan-glow"
                       }`}
                     />
                     {formErrors.date && (
@@ -224,8 +224,8 @@ export const BookingForm = () => {
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className={`px-4 py-3 rounded-xl bg-ocean-dark/80 border text-white focus:outline-none focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium ${
-                        formErrors.time ? "border-red-500" : "border-gray-800 focus:border-neon-orange"
+                      className={`px-4 py-3 rounded-xl bg-black/40 border text-white focus:outline-none focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium ${
+                        formErrors.time ? "border-red-500" : "border-white/10 focus:border-cyan-glow"
                       }`}
                     >
                       <option value="" disabled>--Select Slot--</option>
@@ -254,7 +254,7 @@ export const BookingForm = () => {
                       name="duration"
                       value={formData.duration}
                       onChange={handleChange}
-                      className="px-4 py-3 rounded-xl bg-ocean-dark/80 border border-gray-800 text-white focus:outline-none focus:border-neon-orange focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium"
+                      className="px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white focus:outline-none focus:border-cyan-glow focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium"
                     >
                       <option value="40 min">40 min</option>
                       <option value="1 hour">1 hour</option>
@@ -272,7 +272,7 @@ export const BookingForm = () => {
                       name="rideType"
                       value={formData.rideType}
                       onChange={handleChange}
-                      className="px-4 py-3 rounded-xl bg-ocean-dark/80 border border-gray-800 text-white focus:outline-none focus:border-neon-orange focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium"
+                      className="px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white focus:outline-none focus:border-cyan-glow focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium"
                     >
                       <option value="single">{t.booking.single}</option>
                       <option value="double">{t.booking.double}</option>
@@ -289,7 +289,7 @@ export const BookingForm = () => {
                       name="quantity"
                       value={formData.quantity}
                       onChange={handleChange}
-                      className="px-4 py-3 rounded-xl bg-ocean-dark/80 border border-gray-800 text-white focus:outline-none focus:border-neon-orange focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium"
+                      className="px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white focus:outline-none focus:border-cyan-glow focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -310,7 +310,7 @@ export const BookingForm = () => {
                     rows={3}
                     value={formData.requests}
                     onChange={handleChange}
-                    className="px-4 py-3 rounded-xl bg-ocean-dark/80 border border-gray-800 text-white focus:outline-none focus:border-neon-orange focus:ring-2 focus:ring-neon-orange/50 transition-all font-medium resize-none"
+                    className="px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white focus:outline-none focus:border-cyan-glow focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium resize-none"
                     placeholder="e.g. Any details about participants age, pick up request, etc."
                   />
                 </div>
@@ -319,16 +319,16 @@ export const BookingForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-black bg-gradient-to-r from-sun-yellow via-neon-orange to-red-500 hover:from-neon-orange hover:to-sun-yellow shadow-[0_4px_25px_rgba(255,106,0,0.35)] hover:shadow-[0_4px_30px_rgba(255,106,0,0.55)] transition-all transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-on-secondary bg-coral-glow hover:bg-[#e83e44] shadow-[0_4px_15px_rgba(252,93,93,0.35)] transition-all transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="h-5 w-5 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                      <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
                       {t.booking.submitting}
                     </>
                   ) : (
                     <>
-                      <Send className="h-5 w-5 text-black" />
+                      <Send className="h-5 w-5 text-white" />
                       {t.booking.submit}
                     </>
                   )}

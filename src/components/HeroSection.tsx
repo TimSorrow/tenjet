@@ -53,7 +53,7 @@ export const HeroSection = () => {
           {/* Headline */}
           <h1 className="font-heading font-black text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-white leading-[1.05] mb-6">
             {t.hero.titleStart}{" "}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-secondary-container drop-shadow-[0_2px_15px_rgba(0,186,255,0.2)]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-glow to-coral-glow drop-shadow-[0_2px_15px_rgba(0,186,255,0.2)]">
               {t.hero.titleHighlight}
             </span>
           </h1>
@@ -67,9 +67,9 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <a
               href="#booking"
-              className="group relative flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-on-primary-container bg-primary-container hover:bg-white shadow-[0_4px_25px_rgba(0,186,255,0.35)] transform hover:-translate-y-1 transition-all duration-300"
+              className="group relative flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-on-primary-fixed bg-cyan-glow hover:bg-white shadow-[0_4px_25px_rgba(0,186,255,0.35)] transform hover:-translate-y-1 transition-all duration-300"
             >
-              <Calendar className="h-5 w-5 text-on-primary-container group-hover:scale-110 transition-transform" />
+              <Calendar className="h-5 w-5 text-on-primary-fixed group-hover:scale-110 transition-transform" />
               {t.hero.cta}
               {/* Highlight flash animation */}
               <span className="absolute inset-0 w-full h-full rounded-2xl bg-white/10 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />

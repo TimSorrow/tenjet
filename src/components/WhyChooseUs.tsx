@@ -13,19 +13,19 @@ export const WhyChooseUs = () => {
       title: t.whyUs.card1Title,
       desc: t.whyUs.card1Desc,
       icon: Flame,
-      colorClass: "text-neon-orange bg-neon-orange/10 border-neon-orange/30",
+      colorClass: "text-coral-glow bg-coral-glow/10 border-coral-glow/30",
     },
     {
       title: t.whyUs.card2Title,
       desc: t.whyUs.card2Desc,
       icon: Anchor,
-      colorClass: "text-cyan-400 bg-cyan-950/40 border-cyan-800/30",
+      colorClass: "text-cyan-glow bg-cyan-glow/10 border-cyan-glow/30",
     },
     {
       title: t.whyUs.card3Title,
       desc: t.whyUs.card3Desc,
       icon: BadgeDollarSign,
-      colorClass: "text-sun-yellow bg-sun-yellow/10 border-sun-yellow/30",
+      colorClass: "text-cyan-glow bg-cyan-glow/10 border-cyan-glow/30",
     },
     {
       title: t.whyUs.card4Title,
@@ -55,7 +55,7 @@ export const WhyChooseUs = () => {
   };
 
   return (
-    <section id="why-us" className="py-24 bg-gradient-to-b from-ocean-dark to-ocean-deep relative overflow-hidden">
+    <section id="why-us" className="py-24 bg-transparent relative overflow-hidden">
       {/* Decorative ambient glowing orb */}
       <div className="absolute top-[20%] left-[-10%] w-[350px] h-[350px] bg-gradient-to-br from-cyan-600/5 to-transparent rounded-full filter blur-[100px] pointer-events-none" />
 
@@ -100,7 +100,7 @@ export const WhyChooseUs = () => {
                 className="group relative liquid-glass rounded-3xl p-8 hover:border-white/20 shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
               >
                 {/* Accent line */}
-                <div className="absolute top-0 left-0 w-0 h-1 bg-gradient-to-r from-sun-yellow to-neon-orange group-hover:w-full transition-all duration-500" />
+                <div className="absolute top-0 left-0 w-0 h-1 bg-gradient-to-r from-cyan-glow to-coral-glow group-hover:w-full transition-all duration-500" />
                 
                 <div className="flex gap-6 items-start">
                   {/* Animated Icon Container */}
@@ -110,7 +110,7 @@ export const WhyChooseUs = () => {
                   
                   {/* Content */}
                   <div>
-                    <h3 className="font-heading font-bold text-xl text-white mb-3 tracking-wide uppercase group-hover:text-neon-orange transition-colors">
+                    <h3 className="font-heading font-bold text-xl text-white mb-3 tracking-wide uppercase group-hover:text-cyan-glow transition-colors">
                       {card.title}
                     </h3>
                     <p className="text-gray-400 font-medium text-sm leading-relaxed">

@@ -43,7 +43,7 @@ export const MapFooter = () => {
   ];
 
   return (
-    <footer className="bg-ocean-dark border-t border-white/5 pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-transparent border-t border-white/5 pt-16 pb-8 relative overflow-hidden">
       {/* Decorative Wave Overlay */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] transform rotate-180 opacity-5">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[40px]">
@@ -58,12 +58,12 @@ export const MapFooter = () => {
           
           {/* Logo & Description */}
           <div className="lg:col-span-4 space-y-6">
-            <a href="#home" className="flex items-center gap-2">
-              <div className="bg-neon-orange p-1.5 rounded-lg shadow-[0_0_10px_rgba(255,106,0,0.3)]">
-                <Waves className="h-5 w-5 text-white" />
+            <a href="#home" className="flex items-center gap-2 group">
+              <div className="bg-coral-glow p-1.5 rounded-lg shadow-[0_0_10px_rgba(252,93,93,0.3)]">
+                <Waves className="h-5 w-5 text-white group-hover:skew-x-[-10deg] transition-transform duration-200" />
               </div>
-              <span className="font-heading font-black text-lg tracking-wider text-white">
-                OCEAN<span className="text-neon-orange">RUSH</span>
+              <span className="font-heading font-black text-lg tracking-wider text-white uppercase italic">
+                NEON <span className="text-cyan-glow">WAVE</span>
               </span>
             </a>
             <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-sm">
@@ -127,7 +127,7 @@ export const MapFooter = () => {
               </h4>
               <ul className="space-y-4 text-sm font-medium text-gray-400">
                 <li className="flex items-center gap-3">
-                  <Phone className="h-4 w-4 text-neon-orange flex-shrink-0" />
+                  <Phone className="h-4 w-4 text-cyan-glow flex-shrink-0" />
                   <a href="tel:+34600123456" className="hover:text-white transition-colors">
                     +34 600 123 456
                   </a>
@@ -168,7 +168,7 @@ export const MapFooter = () => {
         {/* Embedded Map Section */}
         <div className="w-full mb-12">
           <h4 className="font-heading font-bold text-sm tracking-widest uppercase text-white mb-5 flex items-center gap-2">
-            <MapPin className="h-5 w-5 text-neon-orange" />
+            <MapPin className="h-5 w-5 text-cyan-glow" />
             {t.footer.location}
           </h4>
           <div className="relative w-full h-[280px] sm:h-[350px] rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
@@ -184,8 +184,8 @@ export const MapFooter = () => {
               className="grayscale contrast-125 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
             />
             {/* Float Address Card Overlay */}
-            <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-ocean-dark/95 border border-white/5 backdrop-blur-md p-4 rounded-2xl max-w-xs shadow-2xl pointer-events-none">
-              <span className="block font-heading font-bold text-xs uppercase tracking-wider text-neon-orange mb-1">
+            <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-black/85 border border-white/5 backdrop-blur-md p-4 rounded-2xl max-w-xs shadow-2xl pointer-events-none">
+              <span className="block font-heading font-bold text-xs uppercase tracking-wider text-cyan-400 mb-1">
                 Marina Base
               </span>
               <span className="block text-xs font-semibold text-gray-300">
