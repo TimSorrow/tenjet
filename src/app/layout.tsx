@@ -50,7 +50,7 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${plusJakartaSans.variable} ${hankenGrotesk.variable} ${syncopate.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-transparent text-gray-100">
+      <body className="min-h-full flex flex-col bg-[#030814] text-gray-100">
         <LanguageProvider>
           {children}
         </LanguageProvider>

@@ -120,9 +120,9 @@ export const PricingSection = () => {
                 {/* Card CTA */}
                 <a
                   href={`#booking?duration=${encodeURIComponent(option.duration)}`}
-                  className={`w-full text-center py-3.5 rounded-2xl font-heading font-extrabold text-sm tracking-wider uppercase transition-all duration-300 ${
+                  className={`w-full text-center py-3 sm:py-3.5 rounded-xl font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 ${
                     isPopular
-                      ? "text-white bg-water-blue shadow-[0_4px_15px_rgba(0,141,253,0.35)] hover:bg-water-blue-hover transform hover:-translate-y-0.5"
+                      ? "text-white bg-gradient-to-r from-water-blue to-[#00a2ff] hover:from-water-blue-hover hover:to-water-blue border border-white/10 shadow-[0_4px_15px_rgba(0,141,253,0.25)] transform hover:-translate-y-0.5"
                       : "text-white bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transform hover:-translate-y-0.5"
                   }`}
                 >

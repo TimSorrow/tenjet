@@ -21,12 +21,12 @@ export const HeroSection = () => {
         >
           <a
             href="#booking"
-            className="group relative flex items-center justify-center gap-3 px-12 py-6 rounded-3xl font-heading font-black text-xl sm:text-2xl tracking-widest uppercase text-white bg-water-blue hover:bg-water-blue-hover shadow-[0_8px_30px_rgba(0,141,253,0.45)] hover:shadow-[0_8px_40px_rgba(0,141,253,0.7)] transform hover:-translate-y-1 transition-all duration-300 select-none"
+            className="group relative flex items-center justify-center gap-2 px-6 py-4 sm:px-10 sm:py-5 rounded-2xl font-heading font-bold text-xs sm:text-base tracking-widest uppercase text-white bg-gradient-to-r from-water-blue to-[#00a2ff] hover:from-water-blue-hover hover:to-water-blue border border-white/10 hover:border-white/20 shadow-[0_8px_25px_rgba(0,141,253,0.35)] hover:shadow-[0_8px_35px_rgba(0,141,253,0.55)] transform hover:-translate-y-0.5 transition-all duration-300 select-none"
           >
-            <Calendar className="h-6 w-6 sm:h-7 sm:w-7 text-white group-hover:scale-110 transition-transform" />
+            <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-white group-hover:scale-110 transition-transform" />
             {t.hero.cta}
             {/* Highlight flash animation */}
-            <span className="absolute inset-0 w-full h-full rounded-3xl bg-white/10 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+            <span className="absolute inset-0 w-full h-full rounded-2xl bg-white/10 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
           </a>
         </motion.div>
       </div>

@@ -43,7 +43,7 @@ export const MapFooter = () => {
   ];
 
   return (
-    <footer className="bg-transparent border-t border-white/5 pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-[#030814] border-t border-white/10 pt-16 pb-8 relative overflow-hidden">
       {/* Decorative Wave Overlay */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] transform rotate-180 opacity-5">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[40px]">
