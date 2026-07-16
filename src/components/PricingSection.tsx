@@ -52,7 +52,7 @@ export const PricingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-gray-400 font-medium"
+            className="inline-block text-sm sm:text-base text-white font-semibold px-6 py-3 rounded-2xl bg-black/60 border border-white/10 backdrop-blur-md max-w-3xl mt-4"
           >
             {t.pricing.subtitle}
           </motion.p>
@@ -72,7 +72,7 @@ export const PricingSection = () => {
               <motion.div
                 key={idx}
                 variants={cardVariants}
-                className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 liquid-glass ${
+                className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 liquid-glass !overflow-visible ${
                   isPopular
                     ? "border-2 border-coral-glow shadow-[0_15px_40px_rgba(252,93,93,0.15)] scale-100 md:scale-105 z-20"
                     : "hover:border-white/20 shadow-2xl z-10"
@@ -80,7 +80,7 @@ export const PricingSection = () => {
               >
                 {/* Popular Tag */}
                 {isPopular && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full font-heading font-extrabold text-xs tracking-wider uppercase text-white bg-coral-glow shadow-[0_0_15px_rgba(252,93,93,0.5)]">
+                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full font-heading font-extrabold text-xs tracking-wider uppercase text-white bg-coral-glow shadow-[0_0_15px_rgba(252,93,93,0.5)] z-30">
                     {t.pricing.popular}
                   </span>
                 )}
@@ -98,7 +98,7 @@ export const PricingSection = () => {
                     {option.title}
                   </h3>
 
-                  <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6">
+                  <p className="text-white/80 text-sm font-medium leading-relaxed mb-6">
                     {option.desc}
                   </p>
 
@@ -109,7 +109,7 @@ export const PricingSection = () => {
                         {option.price}
                       </span>
                       {option.oldPrice && (
-                        <span className="font-heading font-semibold text-lg sm:text-xl text-gray-500 line-through">
+                        <span className="font-heading font-semibold text-lg sm:text-xl text-white/45 line-through">
                           {option.oldPrice}
                         </span>
                       )}

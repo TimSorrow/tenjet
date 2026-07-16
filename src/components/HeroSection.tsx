@@ -4,6 +4,7 @@ import React from "react";
 import { useTranslation } from "@/context/LanguageContext";
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
+import Image from "next/image";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -31,6 +32,25 @@ export const HeroSection = () => {
           </a>
         </motion.div>
       </div>
+
+      {/* Jet Ski Parallax Image Layer (moved further left to prevent edge-clipping) */}
+      <motion.div
+        initial={{ opacity: 0, x: 50, scale: 0.95 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="absolute bottom-[6%] right-[8%] sm:right-[16%] lg:right-[24%] w-[300px] sm:w-[460px] lg:w-[630px] h-[200px] sm:h-[310px] lg:h-[430px] z-25 pointer-events-none select-none opacity-85 sm:opacity-100"
+      >
+        <Image
+          src="/images/jetski-cutout-v2.png"
+          alt="Jet Ski Action Cutout"
+          fill
+          priority
+          sizes="(max-w-630px) 100vw, 630px"
+          className="object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]"
+        />
+        {/* Subtle Water Splash Backlight */}
+        <div className="absolute inset-0 bg-radial-gradient(ellipse at center, rgba(6,182,212,0.12) 0%, transparent 70%) pointer-events-none" />
+      </motion.div>
 
       {/* Layered Animated Wave SVGs at the Bottom */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-30">
