@@ -34,23 +34,19 @@ export const HeroSection = () => {
         style={{ y: yBg }}
         className="absolute inset-0 w-full h-[120%] -top-[10%] z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/20 via-ocean-dark/50 to-ocean-dark z-10" />
-        <Image
+        <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/15 via-ocean-dark/45 to-ocean-dark z-10" />
+        <img
           src="/images/jet-ski-wake.webp"
           alt="Jet Ski carving circle wake loop"
-          fill
-          unoptimized
-          priority
-          sizes="100vw"
-          className="object-cover object-center scale-105 select-none"
+          className="w-full h-full object-cover object-center scale-105 select-none pointer-events-none"
         />
       </motion.div>
 
       {/* Decorative Splash/Ocean Particle Effects in Background */}
       <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
         {/* Animated ambient circular light */}
-        <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] bg-gradient-to-tr from-cyan-500/10 to-transparent rounded-full filter blur-[80px] animate-pulse-slow" />
-        <div className="absolute bottom-[20%] right-[5%] w-[450px] h-[450px] bg-gradient-to-tr from-neon-orange/5 to-transparent rounded-full filter blur-[100px] animate-pulse-slow" />
+        <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] bg-gradient-to-tr from-cyan-500/10 to-transparent rounded-full filter blur-[80px]" />
+        <div className="absolute bottom-[20%] right-[5%] w-[450px] h-[450px] bg-gradient-to-tr from-neon-orange/5 to-transparent rounded-full filter blur-[100px]" />
       </div>
 
       {/* Hero Content */}
