@@ -27,17 +27,24 @@ export const HeroSection = () => {
     <section
       id="home"
       ref={heroRef}
-      className="relative w-full h-[95vh] min-h-[750px] overflow-hidden flex items-center bg-ocean-dark"
+      className="relative w-full h-[95vh] min-h-[750px] overflow-hidden flex items-center bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/water-bg-v2.png')" }}
     >
       {/* Background Parallax Layer */}
       <motion.div
         style={{ y: yBg }}
         className="absolute inset-0 w-full h-[120%] -top-[10%] z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/15 via-ocean-dark/45 to-ocean-dark z-10" />
+        {/* Dynamic mesh dot pattern overlay to mask scaling and make it look high-res */}
+        <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:8px_8px] opacity-45 z-10" />
+        
+        {/* Shadow and Ocean Gradient Mask */}
+        <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/10 via-ocean-dark/40 to-ocean-dark z-10" />
+        
         <img
           src="/images/jet-ski-wake.webp"
           alt="Jet Ski carving circle wake loop"
+          style={{ imageRendering: "-webkit-optimize-contrast" }}
           className="w-full h-full object-cover object-center scale-105 select-none pointer-events-none"
         />
       </motion.div>
