@@ -3,7 +3,8 @@
 @theme {
   --font-sans: var(--font-dm-sans);
   --font-body: var(--font-dm-sans);
-  --font-heading: var(--font-plus-jakarta-sans);
+  --font-heading: var(--font-syncopate);
+  --font-alt-heading: var(--font-plus-jakarta-sans);
   --font-label: var(--font-hanken-grotesk);
 
   --color-primary: #00658d;

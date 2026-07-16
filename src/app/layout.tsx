@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Plus_Jakarta_Sans, Hanken_Grotesk } from "next/font/google";
+import { DM_Sans, Plus_Jakarta_Sans, Hanken_Grotesk, Syncopate } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 
@@ -19,6 +19,12 @@ const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hanken-grotesk",
   subsets: ["latin"],
   weight: ["600", "700"],
+});
+
+const syncopate = Syncopate({
+  variable: "--font-syncopate",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const viewport: Viewport = {
@@ -42,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${plusJakartaSans.variable} ${hankenGrotesk.variable} h-full scroll-smooth antialiased`}
+      className={`${dmSans.variable} ${plusJakartaSans.variable} ${hankenGrotesk.variable} ${syncopate.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col bg-transparent text-gray-100">
         <LanguageProvider>
