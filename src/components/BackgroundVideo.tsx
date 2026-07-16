@@ -16,7 +16,7 @@ export const BackgroundVideo = () => {
     <div className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden bg-black">
       <video
         ref={videoRef}
-        src="/videos/reductedJetSki3.mp4"
+        src="/videos/Reductedjetski4.mp4"
         autoPlay
         loop
         muted
