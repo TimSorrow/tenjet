@@ -63,7 +63,7 @@ export const MapFooter = () => {
                 <Waves className="h-5 w-5 text-white group-hover:skew-x-[-10deg] transition-transform duration-200" />
               </div>
               <span className="font-heading font-black text-lg tracking-wider text-white uppercase italic">
-                NEON <span className="text-cyan-glow">WAVE</span>
+                tenjet<span className="text-cyan-glow">.club</span>
               </span>
             </a>
             <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-sm">

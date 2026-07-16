@@ -27,10 +27,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "NEON WAVE - Elite Jet Ski Experience",
+  title: "tenjet.club - Elite Jet Ski Experience",
   description: "Pristine design meets unparalleled performance in a sun-drenched coastal escape. Feel the adrenaline, embrace the wave in Puerto Colón, Tenerife.",
   keywords: ["jet ski puerto colon", "jet ski rent costa adeje", "tenerife jet ski safari", "water sports tenerife", "puerto colon jet ski rental"],
-  authors: [{ name: "NEON WAVE Rentals" }],
+  authors: [{ name: "tenjet.club Rentals" }],
   robots: "index, follow",
 };
 

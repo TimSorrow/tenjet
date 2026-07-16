@@ -24,11 +24,11 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="bg-neon-orange p-1.5 rounded-lg shadow-[0_0_15px_rgba(255,106,0,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div className="bg-coral-glow p-1.5 rounded-lg shadow-[0_0_15px_rgba(252,93,93,0.4)] group-hover:scale-110 transition-transform duration-300">
             <Waves className="h-6 w-6 text-white" />
           </div>
-          <span className="font-heading font-black text-xl tracking-wider text-white bg-clip-text bg-gradient-to-r from-white to-gray-300">
-            OCEAN<span className="text-neon-orange">RUSH</span>
+          <span className="font-heading font-black text-xl tracking-wider text-white">
+            tenjet<span className="text-cyan-glow">.club</span>
           </span>
         </a>
 
