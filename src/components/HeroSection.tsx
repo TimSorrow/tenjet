@@ -36,9 +36,10 @@ export const HeroSection = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/20 via-ocean-dark/50 to-ocean-dark z-10" />
         <Image
-          src="/images/hero-bg-v2.png"
-          alt="Tenerife Costa Adeje Ocean Background"
+          src="/images/jet-ski-wake.webp"
+          alt="Jet Ski carving circle wake loop"
           fill
+          unoptimized
           priority
           sizes="100vw"
           className="object-cover object-center scale-105 select-none"

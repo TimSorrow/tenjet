@@ -35,7 +35,11 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  background-image: linear-gradient(rgba(3, 8, 20, 0.86), rgba(3, 8, 20, 0.9)), url("/images/water-bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
