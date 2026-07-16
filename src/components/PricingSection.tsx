@@ -3,7 +3,7 @@
 import React from "react";
 import { useTranslation } from "@/context/LanguageContext";
 import { motion } from "framer-motion";
-import { Check, Clock, User, Users, ShieldCheck } from "lucide-react";
+import { Check, Clock, ShieldCheck } from "lucide-react";
 
 export const PricingSection = () => {
   const { t } = useTranslation();
@@ -64,17 +64,17 @@ export const PricingSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8 mb-16"
         >
           {t.pricing.pricingOptions.map((option, idx) => {
-            const isPopular = idx === 1; // 1 Hour is most popular
+            const isPopular = idx === 1; // Double is most popular
             return (
               <motion.div
                 key={idx}
                 variants={cardVariants}
                 className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 liquid-glass ${
                   isPopular
-                    ? "border-2 border-coral-glow shadow-[0_15px_40px_rgba(252,93,93,0.15)] scale-100 lg:scale-105 z-20"
+                    ? "border-2 border-coral-glow shadow-[0_15px_40px_rgba(252,93,93,0.15)] scale-100 md:scale-105 z-20"
                     : "hover:border-white/20 shadow-2xl z-10"
                 }`}
               >
@@ -94,36 +94,25 @@ export const PricingSection = () => {
                     </span>
                   </div>
 
+                  <h3 className="font-heading font-black text-2xl text-white mb-2 uppercase tracking-wide">
+                    {option.title}
+                  </h3>
+
                   <p className="text-gray-400 text-sm font-medium leading-relaxed mb-6">
                     {option.desc}
                   </p>
 
                   {/* Pricing Details */}
-                  <div className="space-y-4 border-y border-white/5 py-6 mb-6">
-                    {/* Single Price */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-gray-300">
-                        <User className="h-5 w-5 text-gray-400" />
-                        <span className="font-semibold text-sm">{t.pricing.singleTitle}</span>
-                      </div>
-                      <div className="text-right">
-                        <span className="font-heading font-black text-2xl sm:text-3xl text-white">
-                          {option.singlePrice}
+                  <div className="border-y border-white/5 py-6 mb-6">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-heading font-black text-4xl sm:text-5xl text-white">
+                        {option.price}
+                      </span>
+                      {option.oldPrice && (
+                        <span className="font-heading font-semibold text-lg sm:text-xl text-gray-500 line-through">
+                          {option.oldPrice}
                         </span>
-                      </div>
-                    </div>
-
-                    {/* Double Price */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-gray-300">
-                        <Users className="h-5 w-5 text-gray-400" />
-                        <span className="font-semibold text-sm">{t.pricing.doubleTitle}</span>
-                      </div>
-                      <div className="text-right">
-                        <span className="font-heading font-black text-2xl sm:text-3xl text-sun-yellow">
-                          {option.doublePrice}
-                        </span>
-                      </div>
+                      )}
                     </div>
                   </div>
                 </div>

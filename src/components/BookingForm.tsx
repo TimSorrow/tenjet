@@ -254,11 +254,10 @@ export const BookingForm = () => {
                       name="duration"
                       value={formData.duration}
                       onChange={handleChange}
-                      className="px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white focus:outline-none focus:border-cyan-glow focus:ring-2 focus:ring-cyan-glow/50 transition-all font-medium"
+                      disabled
+                      className="px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white opacity-80 cursor-not-allowed focus:outline-none transition-all font-medium"
                     >
-                      <option value="40 min">40 min</option>
                       <option value="1 hour">1 hour</option>
-                      <option value="2 hours">2 hours</option>
                     </select>
                   </div>
 

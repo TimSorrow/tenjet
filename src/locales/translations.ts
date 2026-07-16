@@ -42,22 +42,18 @@ export const translations = {
       ],
       pricingOptions: [
         {
-          duration: "40 min",
-          singlePrice: "80 €",
-          doublePrice: "100 €",
-          desc: "Great for beginners to experience the speed of a jet ski in Tenerife's waters."
-        },
-        {
+          title: "Single Jet Ski",
           duration: "1 hour",
-          singlePrice: "110 €",
-          doublePrice: "130 €",
-          desc: "Our most requested tour. Cruise along the beautiful Costa Adeje coastline."
+          price: "120 €",
+          oldPrice: "130 €",
+          desc: "Perfect for solo thrill-seekers looking to test their limits on the open sea."
         },
         {
-          duration: "2 hours",
-          singlePrice: "180 €",
-          doublePrice: "210 €",
-          desc: "Full safari tour. Visit the dramatic cliffs of Los Gigantes and spot local marine wildlife."
+          title: "Double Jet Ski",
+          duration: "1 hour",
+          price: "130 €",
+          oldPrice: "140 €",
+          desc: "Share the adventure! Bring a friend or partner for double the fun."
         }
       ]
     },
@@ -160,22 +156,18 @@ export const translations = {
       ],
       pricingOptions: [
         {
-          duration: "40 min",
-          singlePrice: "80 €",
-          doublePrice: "100 €",
-          desc: "Perfecto para principiantes que quieren sentir la velocidad en las aguas de Tenerife."
-        },
-        {
+          title: "Moto de Agua Individual",
           duration: "1 hora",
-          singlePrice: "110 €",
-          doublePrice: "130 €",
-          desc: "Nuestro tour más solicitado. Navega a lo largo de la costa de Costa Adeje."
+          price: "120 €",
+          oldPrice: "130 €",
+          desc: "Ideal para aventureros solitarios que quieren poner a prueba sus límites en mar abierto."
         },
         {
-          duration: "2 horas",
-          singlePrice: "180 €",
-          doublePrice: "210 €",
-          desc: "Safari completo. Visita los acantilados de Los Gigantes y avista la fauna marina local."
+          title: "Moto de Agua Doble",
+          duration: "1 hora",
+          price: "130 €",
+          oldPrice: "140 €",
+          desc: "¡Comparte la aventura! Trae a un amigo o pareja para el doble de diversión."
         }
       ]
     },
