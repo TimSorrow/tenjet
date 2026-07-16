@@ -24,7 +24,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="bg-coral-glow p-1.5 rounded-lg shadow-[0_0_15px_rgba(252,93,93,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div className="bg-cyan-glow p-1.5 rounded-lg shadow-[0_0_15px_rgba(0,186,255,0.4)] group-hover:scale-110 transition-transform duration-300">
             <Waves className="h-6 w-6 text-white" />
           </div>
           <span className="font-heading font-black text-xl tracking-wider text-white">
@@ -61,7 +61,7 @@ export const Navbar = () => {
           {/* CTA Button */}
           <a
             href="#booking"
-            className="relative px-6 py-2.5 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-on-secondary bg-coral-glow hover:bg-secondary shadow-md shadow-coral-glow/30 transform hover:-translate-y-0.5 transition-all duration-200"
+            className="relative px-6 py-2.5 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-white bg-water-blue hover:bg-water-blue-hover shadow-md shadow-water-blue/30 transform hover:-translate-y-0.5 transition-all duration-200"
           >
             {t.nav.booking}
           </a>
@@ -112,7 +112,7 @@ export const Navbar = () => {
               <a
                 href="#booking"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-3 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-on-secondary bg-coral-glow hover:bg-secondary"
+                className="w-full text-center py-3 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-white bg-water-blue hover:bg-water-blue-hover"
               >
                 {t.nav.booking}
               </a>

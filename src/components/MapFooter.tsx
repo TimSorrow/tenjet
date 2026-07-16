@@ -59,7 +59,7 @@ export const MapFooter = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-4 space-y-6">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="bg-coral-glow p-1.5 rounded-lg shadow-[0_0_10px_rgba(252,93,93,0.3)]">
+              <div className="bg-cyan-glow p-1.5 rounded-lg shadow-[0_0_10px_rgba(0,186,255,0.3)]">
                 <Waves className="h-5 w-5 text-white group-hover:skew-x-[-10deg] transition-transform duration-200" />
               </div>
               <span className="font-heading font-black text-lg tracking-wider text-white uppercase italic">

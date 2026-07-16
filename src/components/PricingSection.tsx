@@ -74,13 +74,13 @@ export const PricingSection = () => {
                 variants={cardVariants}
                 className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 liquid-glass !overflow-visible ${
                   isPopular
-                    ? "border-2 border-coral-glow shadow-[0_15px_40px_rgba(252,93,93,0.15)] scale-100 md:scale-105 z-20"
+                    ? "border-2 border-water-blue shadow-[0_15px_40px_rgba(0,141,253,0.15)] scale-100 md:scale-105 z-20"
                     : "hover:border-white/20 shadow-2xl z-10"
                 }`}
               >
                 {/* Popular Tag */}
                 {isPopular && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full font-heading font-extrabold text-xs tracking-wider uppercase text-white bg-coral-glow shadow-[0_0_15px_rgba(252,93,93,0.5)] z-30">
+                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full font-heading font-extrabold text-xs tracking-wider uppercase text-white bg-water-blue shadow-[0_0_15px_rgba(0,141,253,0.5)] z-30">
                     {t.pricing.popular}
                   </span>
                 )}
@@ -122,7 +122,7 @@ export const PricingSection = () => {
                   href={`#booking?duration=${encodeURIComponent(option.duration)}`}
                   className={`w-full text-center py-3.5 rounded-2xl font-heading font-extrabold text-sm tracking-wider uppercase transition-all duration-300 ${
                     isPopular
-                      ? "text-white bg-coral-glow shadow-[0_4px_15px_rgba(252,93,93,0.35)] hover:bg-[#e83e44] transform hover:-translate-y-0.5"
+                      ? "text-white bg-water-blue shadow-[0_4px_15px_rgba(0,141,253,0.35)] hover:bg-water-blue-hover transform hover:-translate-y-0.5"
                       : "text-white bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transform hover:-translate-y-0.5"
                   }`}
                 >
@@ -144,7 +144,7 @@ export const PricingSection = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h3 className="font-heading font-black text-lg sm:text-xl uppercase tracking-wider text-white mb-2 flex items-center gap-2">
-                <ShieldCheck className="h-6 w-6 text-coral-glow" />
+                <ShieldCheck className="h-6 w-6 text-cyan-glow" />
                 {t.pricing.includesTitle}
               </h3>
             </div>

@@ -18,9 +18,11 @@
   --color-on-primary-fixed: #001e2d;
   --color-on-primary-fixed-variant: #004c6b;
 
-  --color-secondary: #b3272e;
-  --color-secondary-container: #fc5d5d;
+  --color-secondary: #0074d0;
+  --color-secondary-container: #008dfd;
   --color-coral-glow: #fc5d5d;
+  --color-water-blue: #008dfd;
+  --color-water-blue-hover: #0074d0;
   --color-secondary-fixed: #ffdad7;
   --color-secondary-fixed-dim: #ffb3af;
   --color-on-secondary: #ffffff;

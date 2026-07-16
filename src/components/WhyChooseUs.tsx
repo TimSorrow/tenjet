@@ -13,7 +13,7 @@ export const WhyChooseUs = () => {
       title: t.whyUs.card1Title,
       desc: t.whyUs.card1Desc,
       icon: Flame,
-      colorClass: "text-coral-glow bg-coral-glow/10 border-coral-glow/30",
+      colorClass: "text-cyan-glow bg-cyan-glow/10 border-cyan-glow/30",
     },
     {
       title: t.whyUs.card2Title,
@@ -77,7 +77,7 @@ export const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-gray-400 font-medium"
+            className="inline-block text-sm sm:text-base text-white font-semibold px-6 py-3 rounded-2xl bg-black/60 border border-white/10 backdrop-blur-md max-w-3xl mt-4"
           >
             {t.whyUs.subtitle}
           </motion.p>

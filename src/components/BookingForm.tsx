@@ -124,7 +124,7 @@ export const BookingForm = () => {
           <h2 className="font-heading font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-4">
             {t.booking.title}
           </h2>
-          <p className="text-base sm:text-lg text-gray-400 font-medium leading-relaxed">
+          <p className="inline-block text-sm sm:text-base text-white font-semibold px-6 py-3 rounded-2xl bg-black/60 border border-white/10 backdrop-blur-md max-w-2xl mt-4">
             {t.booking.subtitle}
           </p>
         </div>
@@ -318,7 +318,7 @@ export const BookingForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-on-secondary bg-coral-glow hover:bg-[#e83e44] shadow-[0_4px_15px_rgba(252,93,93,0.35)] transition-all transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-white bg-water-blue hover:bg-water-blue-hover shadow-[0_4px_15px_rgba(0,141,253,0.35)] transition-all transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
