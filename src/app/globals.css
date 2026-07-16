@@ -42,16 +42,66 @@ body {
 }
 
 /* Glassmorphism utility helper */
+/* Liquid Glass utility classes */
+.liquid-glass {
+  background: rgba(12, 32, 73, 0.28);
+  backdrop-filter: blur(25px) saturate(210%);
+  -webkit-backdrop-filter: blur(25px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.12),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.25),
+    0 16px 48px -8px rgba(1, 4, 12, 0.65);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.07), transparent 60%);
+  pointer-events: none;
+}
+
+/* Glassmorphism helpers updated to Liquid Glass */
 .glass-panel {
-  background: rgba(3, 8, 20, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(12, 32, 73, 0.32);
+  backdrop-filter: blur(22px) saturate(190%);
+  -webkit-backdrop-filter: blur(22px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    0 12px 40px 0 rgba(1, 4, 12, 0.55);
 }
 
 .glass-navbar {
-  background: rgba(3, 8, 20, 0.65);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: rgba(3, 8, 20, 0.55);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Shifting background gradient liquid blobs */
+@keyframes liquid-drift {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(40px, -60px) scale(1.15) rotate(120deg);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.9) rotate(240deg);
+  }
+}
+
+.liquid-blob {
+  animation: liquid-drift 14s ease-in-out infinite;
+}
+
+.liquid-blob-slow {
+  animation: liquid-drift 22s ease-in-out infinite alternate;
 }
 
 /* Custom Webkit scrollbar */

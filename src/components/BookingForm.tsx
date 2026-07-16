@@ -130,7 +130,7 @@ export const BookingForm = () => {
         </div>
 
         {/* Booking Card & Form */}
-        <div className="bg-gradient-to-br from-ocean-light/20 to-ocean-dark/60 rounded-3xl p-6 sm:p-10 border border-white/5 shadow-2xl relative">
+        <div className="liquid-glass rounded-3xl p-6 sm:p-10 shadow-2xl relative">
           
           <AnimatePresence mode="wait">
             {!showSuccess ? (

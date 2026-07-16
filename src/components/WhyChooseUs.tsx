@@ -97,7 +97,7 @@ export const WhyChooseUs = () => {
               <motion.div
                 key={idx}
                 variants={cardVariants}
-                className="group relative bg-gradient-to-br from-ocean-light/20 to-ocean-dark/40 rounded-3xl p-8 border border-white/5 hover:border-white/15 shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+                className="group relative liquid-glass rounded-3xl p-8 hover:border-white/20 shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
               >
                 {/* Accent line */}
                 <div className="absolute top-0 left-0 w-0 h-1 bg-gradient-to-r from-sun-yellow to-neon-orange group-hover:w-full transition-all duration-500" />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { ShowcaseSection } from "@/components/ShowcaseSection";
 import { PricingSection } from "@/components/PricingSection";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { BookingForm } from "@/components/BookingForm";
@@ -15,6 +16,9 @@ export default function Home() {
       <main className="flex-grow">
         {/* Animated Parallax Hero Section */}
         <HeroSection />
+
+        {/* Dynamic Liquid Glass Video Showcase */}
+        <ShowcaseSection />
 
         {/* Pricing Options */}
         <PricingSection />

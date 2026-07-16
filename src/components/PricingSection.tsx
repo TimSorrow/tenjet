@@ -72,10 +72,10 @@ export const PricingSection = () => {
               <motion.div
                 key={idx}
                 variants={cardVariants}
-                className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 ${
+                className={`relative rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 liquid-glass ${
                   isPopular
-                    ? "bg-gradient-to-b from-ocean-light/80 to-ocean-dark/80 border-2 border-neon-orange shadow-[0_15px_40px_rgba(255,106,0,0.15)] scale-100 lg:scale-105 z-20"
-                    : "bg-gradient-to-b from-ocean-light/30 to-ocean-dark/50 border border-white/5 hover:border-white/15 shadow-2xl z-10"
+                    ? "border-2 border-neon-orange shadow-[0_15px_40px_rgba(255,106,0,0.15)] scale-100 lg:scale-105 z-20"
+                    : "hover:border-white/20 shadow-2xl z-10"
                 }`}
               >
                 {/* Popular Tag */}
@@ -150,7 +150,7 @@ export const PricingSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto bg-gradient-to-br from-ocean-light/20 to-ocean-dark/40 rounded-3xl p-8 border border-white/5 shadow-2xl"
+          className="max-w-4xl mx-auto liquid-glass rounded-3xl p-8 shadow-2xl"
         >
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>

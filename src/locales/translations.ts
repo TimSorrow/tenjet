@@ -98,6 +98,14 @@ export const translations = {
         time: "Please select a time slot"
       }
     },
+    showcase: {
+      badge: "🌊 Watch The Action",
+      title: "Feel the Thrill in Real Time",
+      desc: "Watch our professional riders carving tight wakes and generating pure adrenaline in Tenerife's crystal-clear waters. This is the ultimate freedom you'll experience!",
+      tag1: "Carve Wakes",
+      tag2: "High Speed",
+      tag3: "Pure Adrenaline",
+    },
     footer: {
       description: "Experience the ultimate water sports adventure in Costa Adeje, Tenerife. High-speed jet ski safaris and tours tailored for adrenaline lovers.",
       quickLinks: "Quick Links",
@@ -207,6 +215,14 @@ export const translations = {
         date: "Por favor, selecciona una fecha",
         time: "Por favor, selecciona una hora"
       }
+    },
+    showcase: {
+      badge: "🌊 Mira la Acción",
+      title: "Siente la Emoción en Tiempo Real",
+      desc: "Observa a nuestros pilotos profesionales trazando estelas cerradas y generando adrenalina pura en las aguas de Tenerife. ¡Esta es la libertad absoluta que experimentarás!",
+      tag1: "Cruzar Olas",
+      tag2: "Alta Velocidad",
+      tag3: "Pura Adrenalina",
     },
     footer: {
       description: "Experimenta la aventura acuática definitiva en Costa Adeje, Tenerife. Excursiones en moto de agua de alta velocidad diseñadas para los amantes de la adrenalina.",
