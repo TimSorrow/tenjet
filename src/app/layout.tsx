@@ -1,18 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Inter } from "next/font/google";
+import { DM_Sans, Plus_Jakarta_Sans, Hanken_Grotesk } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["600", "700", "800"],
+});
+
+const hankenGrotesk = Hanken_Grotesk({
+  variable: "--font-hanken-grotesk",
+  subsets: ["latin"],
+  weight: ["600", "700"],
 });
 
 export const viewport: Viewport = {
@@ -21,10 +27,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Jet Ski Puerto Colón | Costa Adeje Tenerife Jet Ski Rental & Safari Tours",
-  description: "Feel the adrenaline! Premium Jet Ski rentals and safari tours in Puerto Colón, Costa Adeje, Tenerife. High-performance Sea-Doos, no license required, 100% insured.",
+  title: "NEON WAVE - Elite Jet Ski Experience",
+  description: "Pristine design meets unparalleled performance in a sun-drenched coastal escape. Feel the adrenaline, embrace the wave in Puerto Colón, Tenerife.",
   keywords: ["jet ski puerto colon", "jet ski rent costa adeje", "tenerife jet ski safari", "water sports tenerife", "puerto colon jet ski rental"],
-  authors: [{ name: "Puerto Colon Jet Ski Rentals" }],
+  authors: [{ name: "NEON WAVE Rentals" }],
   robots: "index, follow",
 };
 
@@ -36,9 +42,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${inter.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${plusJakartaSans.variable} ${hankenGrotesk.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-ocean-dark text-gray-100">
+      <body className="min-h-full flex flex-col bg-transparent text-gray-100">
         <LanguageProvider>
           {children}
         </LanguageProvider>

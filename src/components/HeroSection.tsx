@@ -27,33 +27,13 @@ export const HeroSection = () => {
     <section
       id="home"
       ref={heroRef}
-      className="relative w-full h-[95vh] min-h-[750px] overflow-hidden flex items-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/water-bg-v2.png')" }}
+      className="relative w-full h-[95vh] min-h-[750px] overflow-hidden flex items-center bg-transparent"
     >
-      {/* Background Parallax Layer */}
-      <motion.div
-        style={{ y: yBg }}
-        className="absolute inset-0 w-full h-[120%] -top-[10%] z-0"
-      >
-        {/* Dynamic mesh dot pattern overlay to mask scaling and make it look high-res */}
-        <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:8px_8px] opacity-45 z-10" />
-        
-        {/* Shadow and Ocean Gradient Mask */}
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/10 via-ocean-dark/40 to-ocean-dark z-10" />
-        
-        <img
-          src="/images/jet-ski-wake.webp"
-          alt="Jet Ski carving circle wake loop"
-          style={{ imageRendering: "-webkit-optimize-contrast" }}
-          className="w-full h-full object-cover object-center scale-105 select-none pointer-events-none"
-        />
-      </motion.div>
-
       {/* Decorative Splash/Ocean Particle Effects in Background */}
       <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
         {/* Animated ambient circular light */}
-        <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] bg-gradient-to-tr from-cyan-500/10 to-transparent rounded-full filter blur-[80px]" />
-        <div className="absolute bottom-[20%] right-[5%] w-[450px] h-[450px] bg-gradient-to-tr from-neon-orange/5 to-transparent rounded-full filter blur-[100px]" />
+        <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] bg-gradient-to-tr from-primary/20 to-transparent rounded-full filter blur-[80px]" />
+        <div className="absolute bottom-[20%] right-[5%] w-[450px] h-[450px] bg-gradient-to-tr from-secondary-container/10 to-transparent rounded-full filter blur-[100px]" />
       </div>
 
       {/* Hero Content */}
@@ -73,7 +53,7 @@ export const HeroSection = () => {
           {/* Headline */}
           <h1 className="font-heading font-black text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-white leading-[1.05] mb-6">
             {t.hero.titleStart}{" "}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-sun-yellow via-neon-orange to-red-500 drop-shadow-[0_2px_15px_rgba(255,106,0,0.2)]">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-secondary-container drop-shadow-[0_2px_15px_rgba(0,186,255,0.2)]">
               {t.hero.titleHighlight}
             </span>
           </h1>
@@ -87,12 +67,12 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <a
               href="#booking"
-              className="group relative flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-black bg-gradient-to-r from-sun-yellow via-neon-orange to-red-500 hover:from-neon-orange hover:to-sun-yellow shadow-[0_4px_30px_rgba(255,106,0,0.45)] hover:shadow-[0_4px_35px_rgba(255,106,0,0.6)] transform hover:-translate-y-1 transition-all duration-300"
+              className="group relative flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-on-primary-container bg-primary-container hover:bg-white shadow-[0_4px_25px_rgba(0,186,255,0.35)] transform hover:-translate-y-1 transition-all duration-300"
             >
-              <Calendar className="h-5 w-5 text-black group-hover:scale-110 transition-transform" />
+              <Calendar className="h-5 w-5 text-on-primary-container group-hover:scale-110 transition-transform" />
               {t.hero.cta}
               {/* Highlight flash animation */}
-              <span className="absolute inset-0 w-full h-full rounded-2xl bg-white/20 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+              <span className="absolute inset-0 w-full h-full rounded-2xl bg-white/10 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
             </a>
           </div>
           
@@ -135,17 +115,17 @@ export const HeroSection = () => {
           {/* Wave Layer 1 (Deepest/Slowest) */}
           <path
             d="M985.6,38.6C1024.1,22.2,1069,11.8,1125,18.8c58,7.2,75,41.4,75,41.4V120H0V60.2c0,0,29.8-31.5,91.8-21.5c62,10,123.3,42.5,177.3,42.5c54,0,105.7-38.3,161.7-41.5c56-3.2,108.3,31.2,162.3,35c54,3.8,111.7-27.5,165.7-26.2C812.8,49.8,947.1,55,985.6,38.6z"
-            className="fill-ocean-dark opacity-35"
+            className="fill-[#030814] opacity-35"
           />
           {/* Wave Layer 2 (Middle/Floating) */}
           <path
             d="M0,80c120,40,240,40,360,0s240-40,360,0s240,40,360,0s240-40,360,0v40H0V80z"
-            className="fill-ocean-dark opacity-50"
+            className="fill-[#030814] opacity-50"
           />
           {/* Wave Layer 3 (Top/Crisp Border) */}
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,55.05,18,83.66,26.83,149.57,47.15,220.66,62.26,321.39,56.44z"
-            className="fill-ocean-dark"
+            className="fill-[#030814]"
           />
         </svg>
       </div>
@@ -154,7 +134,7 @@ export const HeroSection = () => {
       <div className="absolute bottom-[60px] sm:bottom-[90px] left-0 w-full z-20 py-4 border-y border-white/5 bg-ocean-dark/40 backdrop-blur-md hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-3 gap-6 text-center">
           <div className="flex flex-col items-center justify-center border-r border-white/5">
-            <span className="font-heading font-black text-2xl text-neon-orange tracking-tight">
+            <span className="font-heading font-black text-2xl text-secondary-container tracking-tight">
               {t.hero.stat1Number}
             </span>
             <span className="text-xs text-gray-400 font-semibold uppercase tracking-wider mt-0.5">
@@ -162,8 +142,8 @@ export const HeroSection = () => {
             </span>
           </div>
           <div className="flex flex-col items-center justify-center border-r border-white/5">
-            <span className="font-heading font-black text-2xl text-sun-yellow tracking-tight flex items-center gap-1">
-              <Award className="h-5 w-5 text-sun-yellow animate-float" />
+            <span className="font-heading font-black text-2xl text-primary-container tracking-tight flex items-center gap-1">
+              <Award className="h-5 w-5 text-primary-container animate-float" />
               {t.hero.stat2Number}
             </span>
             <span className="text-xs text-gray-400 font-semibold uppercase tracking-wider mt-0.5">
@@ -171,8 +151,8 @@ export const HeroSection = () => {
             </span>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <span className="font-heading font-black text-2xl text-cyan-400 tracking-tight flex items-center gap-1">
-              <Shield className="h-5 w-5 text-cyan-400" />
+            <span className="font-heading font-black text-2xl text-primary-fixed-dim tracking-tight flex items-center gap-1">
+              <Shield className="h-5 w-5 text-primary-fixed-dim" />
               {t.hero.stat3Number}
             </span>
             <span className="text-xs text-gray-400 font-semibold uppercase tracking-wider mt-0.5">

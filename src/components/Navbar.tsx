@@ -41,7 +41,7 @@ export const Navbar = () => {
               className="relative text-sm font-semibold tracking-wide text-gray-300 hover:text-white transition-colors duration-200 py-1"
             >
               {link.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-orange transition-all duration-300 hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-container transition-all duration-300 hover:w-full" />
             </a>
           ))}
         </div>
@@ -54,14 +54,14 @@ export const Navbar = () => {
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium border border-gray-700 hover:border-gray-500 hover:bg-white/5 transition-all text-gray-300"
             aria-label="Toggle language"
           >
-            <Globe className="h-4 w-4 text-neon-orange" />
+            <Globe className="h-4 w-4 text-primary-container" />
             <span>{language.toUpperCase()}</span>
           </button>
 
           {/* CTA Button */}
           <a
             href="#booking"
-            className="relative px-6 py-2.5 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-black bg-gradient-to-r from-sun-yellow to-neon-orange hover:from-neon-orange hover:to-sun-yellow shadow-[0_4px_20px_rgba(255,106,0,0.35)] hover:shadow-[0_4px_25px_rgba(255,106,0,0.5)] transform hover:-translate-y-0.5 transition-all duration-200"
+            className="relative px-6 py-2.5 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-on-secondary bg-secondary-container hover:bg-secondary shadow-md shadow-secondary-container/30 transform hover:-translate-y-0.5 transition-all duration-200"
           >
             {t.nav.booking}
           </a>
@@ -74,7 +74,7 @@ export const Navbar = () => {
             onClick={handleLangToggle}
             className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border border-gray-700 text-gray-300"
           >
-            <Globe className="h-3.5 w-3.5 text-neon-orange" />
+            <Globe className="h-3.5 w-3.5 text-primary-container" />
             <span>{language.toUpperCase()}</span>
           </button>
 
@@ -112,7 +112,7 @@ export const Navbar = () => {
               <a
                 href="#booking"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-3 rounded-xl font-heading font-extrabold text-sm tracking-wider uppercase text-black bg-gradient-to-r from-sun-yellow to-neon-orange"
+                className="w-full text-center py-3 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-on-secondary bg-secondary-container hover:bg-secondary"
               >
                 {t.nav.booking}
               </a>
