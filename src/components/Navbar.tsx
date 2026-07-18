@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "@/context/LanguageContext";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Globe, Waves } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import Image from "next/image";
 
 export const Navbar = () => {
   const { t, language, setLanguage } = useTranslation();
@@ -20,16 +21,19 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="glass-navbar sticky top-0 w-full z-50 px-4 py-3 sm:px-6 lg:px-8 transition-all duration-300">
+    <nav className="glass-navbar sticky top-0 w-full z-50 px-4 py-1 sm:px-6 lg:px-8 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2 group">
-          <div className="bg-cyan-glow p-1.5 rounded-lg shadow-[0_0_15px_rgba(0,186,255,0.4)] group-hover:scale-110 transition-transform duration-300">
-            <Waves className="h-6 w-6 text-white" />
+        <a href="#home" className="flex items-center group py-0.5">
+          <div className="relative w-[90px] h-[50px] sm:w-[108px] sm:h-[60px] transition-transform duration-300 group-hover:scale-105">
+            <Image
+              src="/images/logo.png"
+              alt="tenjet.club logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          <span className="font-heading font-black text-xl tracking-wider text-white">
-            tenjet<span className="text-cyan-glow">.club</span>
-          </span>
         </a>
 
         {/* Desktop Navigation */}

@@ -3,6 +3,7 @@
 import React from "react";
 import { useTranslation } from "@/context/LanguageContext";
 import { Phone, MessageCircle, Mail, MapPin, Waves } from "lucide-react";
+import Image from "next/image";
 
 const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -58,13 +59,15 @@ export const MapFooter = () => {
           
           {/* Logo & Description */}
           <div className="lg:col-span-4 space-y-6">
-            <a href="#home" className="flex items-center gap-2 group">
-              <div className="bg-cyan-glow p-1.5 rounded-lg shadow-[0_0_10px_rgba(0,186,255,0.3)]">
-                <Waves className="h-5 w-5 text-white group-hover:skew-x-[-10deg] transition-transform duration-200" />
+            <a href="#home" className="flex items-center group">
+              <div className="relative w-[110px] h-[61px] transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/images/logo.png"
+                  alt="tenjet.club logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <span className="font-heading font-black text-lg tracking-wider text-white uppercase italic">
-                tenjet<span className="text-cyan-glow">.club</span>
-              </span>
             </a>
             <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-sm">
               {t.footer.description}
