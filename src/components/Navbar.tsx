@@ -64,7 +64,9 @@ export const Navbar = () => {
 
           {/* CTA Button */}
           <a
-            href="#booking"
+            href="https://wa.me/34665519742?text=Hi,%20i%20would%20like%20to%20rent%20a%20jetski"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glitch px-5 py-2 text-xs select-none"
             data-text={t.nav.booking}
           >
@@ -115,7 +117,9 @@ export const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#booking"
+                href="https://wa.me/34665519742?text=Hi,%20i%20would%20like%20to%20rent%20a%20jetski"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="w-full btn-glitch py-3 text-xs select-none"
                 data-text={t.nav.booking}

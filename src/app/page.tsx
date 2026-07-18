@@ -4,7 +4,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { BackgroundVideo } from "@/components/BackgroundVideo";
 import { PricingSection } from "@/components/PricingSection";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
-import { BookingForm } from "@/components/BookingForm";
 import { MapFooter } from "@/components/MapFooter";
 
 export default function Home() {
@@ -27,9 +26,6 @@ export default function Home() {
 
           {/* Why Choose Us Grid */}
           <WhyChooseUs />
-
-          {/* Interactive Booking Form */}
-          <BookingForm />
         </main>
 
         {/* Footer with Google Map and WhatsApp CTA */}

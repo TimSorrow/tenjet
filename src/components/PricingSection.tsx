@@ -119,7 +119,13 @@ export const PricingSection = () => {
 
                 {/* Card CTA */}
                 <a
-                  href={`#booking?duration=${encodeURIComponent(option.duration)}`}
+                  href={
+                    idx === 0
+                      ? "https://wa.me/34665519742?text=Hi,%20i%20would%20like%20to%20rent%20a%20Single%20Jet%20Ski"
+                      : "https://wa.me/34665519742?text=Hi,%20i%20would%20like%20to%20rent%20a%20Double%20Jet%20Ski"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`w-full text-center py-3 sm:py-3.5 rounded-xl font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 ${
                     isPopular
                       ? "btn-glitch select-none"
