@@ -318,18 +318,19 @@ export const BookingForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl font-heading font-black text-base tracking-wider uppercase text-white bg-water-blue hover:bg-water-blue-hover shadow-[0_4px_15px_rgba(0,141,253,0.35)] transition-all transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full btn-glitch py-4 text-xs sm:text-sm disabled:opacity-50 disabled:cursor-not-allowed select-none"
+                  data-text={isSubmitting ? t.booking.submitting : t.booking.submit}
                 >
                   {isSubmitting ? (
-                    <>
+                    <div className="flex items-center justify-center gap-2 z-10">
                       <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                      {t.booking.submitting}
-                    </>
+                      <span>{t.booking.submitting}</span>
+                    </div>
                   ) : (
-                    <>
-                      <Send className="h-5 w-5 text-white" />
-                      {t.booking.submit}
-                    </>
+                    <div className="flex items-center justify-center gap-2 z-10">
+                      <Send className="h-4 w-4 text-white" />
+                      <span>{t.booking.submit}</span>
+                    </div>
                   )}
                 </button>
               </motion.form>

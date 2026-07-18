@@ -61,9 +61,10 @@ export const Navbar = () => {
           {/* CTA Button */}
           <a
             href="#booking"
-            className="relative px-6 py-2.5 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-white bg-water-blue hover:bg-water-blue-hover shadow-md shadow-water-blue/30 transform hover:-translate-y-0.5 transition-all duration-200"
+            className="btn-glitch px-5 py-2 text-xs select-none"
+            data-text={t.nav.booking}
           >
-            {t.nav.booking}
+            <span className="z-10">{t.nav.booking}</span>
           </a>
         </div>
 
@@ -112,9 +113,10 @@ export const Navbar = () => {
               <a
                 href="#booking"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-3 rounded-xl font-heading font-bold text-sm tracking-wider uppercase text-white bg-water-blue hover:bg-water-blue-hover"
+                className="w-full btn-glitch py-3 text-xs select-none"
+                data-text={t.nav.booking}
               >
-                {t.nav.booking}
+                <span className="z-10">{t.nav.booking}</span>
               </a>
             </div>
           </motion.div>
