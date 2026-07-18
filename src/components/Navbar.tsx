@@ -25,7 +25,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center group py-0.5">
-          <div className="relative w-[90px] h-[50px] sm:w-[108px] sm:h-[60px] transition-transform duration-300 group-hover:scale-105">
+          <div className="relative w-[110px] h-[42px] sm:w-[130px] sm:h-[50px] transition-transform duration-300 group-hover:scale-105">
             <Image
               src="/images/logo.png"
               alt="tenjet.club logo"

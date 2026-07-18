@@ -60,7 +60,7 @@ export const MapFooter = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-4 space-y-6">
             <a href="#home" className="flex items-center group">
-              <div className="relative w-[110px] h-[61px] transition-transform duration-300 group-hover:scale-105">
+              <div className="relative w-[130px] h-[50px] transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/images/logo.png"
                   alt="tenjet.club logo"
