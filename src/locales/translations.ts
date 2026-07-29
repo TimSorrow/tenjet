@@ -110,7 +110,9 @@ export const translations = {
       contact: "Contact & Support",
       policyTitle: "Booking & Cancellation Policy",
       policyText: "Free cancellations up to 24 hours before departure. In case of poor sea conditions, we offer full refunds or alternative dates. All drivers must be 16+ (parental consent required for under 18s). Passengers can be 8+.",
-      allRights: "All rights reserved. Designed for maximum adrenaline."
+      allRights: "All rights reserved. Designed for maximum adrenaline.",
+      privacyPolicy: "Privacy Policy",
+      termsOfService: "Terms of Service"
     }
   },
   es: {
@@ -224,7 +226,9 @@ export const translations = {
       contact: "Contacto y Soporte",
       policyTitle: "Política de Reservas y Cancelación",
       policyText: "Cancelaciones gratuitas hasta 24 horas antes. En caso de mal estado del mar, se ofrece reembolso completo o cambio de fecha. Pilotos mayores de 16 años (con consentimiento paterno para menores de 18). Acompañantes mayores de 8 años.",
-      allRights: "Todos los derechos reservados. Diseñado para la máxima adrenalina."
+      allRights: "Todos los derechos reservados. Diseñado para la máxima adrenalina.",
+      privacyPolicy: "Política de Privacidad",
+      termsOfService: "Términos de Servicio"
     }
   }
 };

@@ -204,8 +204,8 @@ export const MapFooter = () => {
             © {new Date().getFullYear()} OCEANRUSH. {t.footer.allRights}
           </span>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
+            <a href="/privacy" className="hover:text-gray-300 transition-colors">{t.footer.privacyPolicy || "Privacy Policy"}</a>
+            <a href="/terms" className="hover:text-gray-300 transition-colors">{t.footer.termsOfService || "Terms of Service"}</a>
           </div>
         </div>
 
