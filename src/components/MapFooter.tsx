@@ -131,14 +131,14 @@ export const MapFooter = () => {
               <ul className="space-y-4 text-sm font-medium text-gray-400">
                 <li className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-cyan-glow flex-shrink-0" />
-                  <a href="tel:+34600123456" className="hover:text-white transition-colors">
-                    +34 600 123 456
+                  <a href="tel:+34665519742" className="hover:text-white transition-colors">
+                    +34 665 519 742
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <MessageCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
                   <a
-                    href="https://wa.me/34600123456"
+                    href="https://wa.me/34665519742"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
@@ -187,14 +187,22 @@ export const MapFooter = () => {
               className="grayscale contrast-125 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
             />
             {/* Float Address Card Overlay */}
-            <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-black/85 border border-white/5 backdrop-blur-md p-4 rounded-2xl max-w-xs shadow-2xl pointer-events-none">
-              <span className="block font-heading font-bold text-xs uppercase tracking-wider text-cyan-400 mb-1">
+            <a
+              href="https://www.google.com/maps/place/Puerto+Col%C3%B3n/@28.0789729,-16.7360216,17z/data=!4m6!3m5!1s0xc6a97de015c92cb:0x6b7725902096bb79!8m2!3d28.0789729!4d-16.7334467!16s%2Fg%2F11b6s60q1j"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-4 right-4 sm:right-auto bg-black/85 border border-white/5 hover:border-cyan-500/30 backdrop-blur-md p-4 rounded-2xl max-w-xs shadow-2xl transition-colors group/mapcard cursor-pointer"
+            >
+              <span className="block font-heading font-bold text-xs uppercase tracking-wider text-cyan-400 mb-1 flex items-center gap-1.5">
                 Marina Base
+                <span className="text-[10px] text-gray-500 font-normal normal-case group-hover/mapcard:text-cyan-400 transition-colors">
+                  (Open Maps ↗)
+                </span>
               </span>
-              <span className="block text-xs font-semibold text-gray-300">
+              <span className="block text-xs font-semibold text-gray-300 group-hover/mapcard:text-white transition-colors">
                 {t.footer.address}
               </span>
-            </div>
+            </a>
           </div>
         </div>
 
