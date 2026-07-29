@@ -33,11 +33,39 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tenjet.club"),
   title: "tenjet.club - Elite Jet Ski Experience",
   description: "Pristine design meets unparalleled performance in a sun-drenched coastal escape. Feel the adrenaline, embrace the wave in Puerto Colón, Tenerife.",
   keywords: ["jet ski puerto colon", "jet ski rent costa adeje", "tenerife jet ski safari", "water sports tenerife", "puerto colon jet ski rental"],
   authors: [{ name: "tenjet.club Rentals" }],
   robots: "index, follow",
+  openGraph: {
+    title: "tenjet.club - Elite Jet Ski Experience",
+    description: "Pristine design meets unparalleled performance in a sun-drenched coastal escape. Feel the adrenaline, embrace the wave in Puerto Colón, Tenerife.",
+    url: "https://tenjet.club",
+    siteName: "tenjet.club",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "tenjet.club Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "tenjet.club - Elite Jet Ski Experience",
+    description: "Pristine design meets unparalleled performance in a sun-drenched coastal escape. Feel the adrenaline, embrace the wave in Puerto Colón, Tenerife.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
