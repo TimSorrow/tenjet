@@ -148,8 +148,8 @@ export const MapFooter = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-cyan-400 flex-shrink-0" />
-                  <a href="mailto:info@oceanrush.es" className="hover:text-white transition-colors">
-                    info@oceanrush.es
+                  <a href="mailto:info@tenjet.club" className="hover:text-white transition-colors">
+                    info@tenjet.club
                   </a>
                 </li>
               </ul>
@@ -200,9 +200,14 @@ export const MapFooter = () => {
 
         {/* Legal Disclaimer & Bottom Rights */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs font-semibold text-gray-500">
-          <span>
-            © {new Date().getFullYear()} OCEANRUSH. {t.footer.allRights}
-          </span>
+          <div className="flex flex-col gap-1">
+            <span>
+              © {new Date().getFullYear()} tenjet.club. {t.footer.allRights}
+            </span>
+            <span className="text-[10px] text-gray-600 font-medium">
+              Developed by <a href="https://timursurov.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 transition-colors">Timur Surov</a>
+            </span>
+          </div>
           <div className="flex gap-6">
             <a href="/privacy" className="hover:text-gray-300 transition-colors">{t.footer.privacyPolicy || "Privacy Policy"}</a>
             <a href="/terms" className="hover:text-gray-300 transition-colors">{t.footer.termsOfService || "Terms of Service"}</a>
