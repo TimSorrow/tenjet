@@ -79,6 +79,50 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${plusJakartaSans.variable} ${hankenGrotesk.variable} ${syncopate.variable} h-full scroll-smooth antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "TenJet Club",
+              image: "https://tenjet.club/og-image.png",
+              "@id": "https://tenjet.club",
+              url: "https://tenjet.club",
+              telephone: "+34665519742",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Centro Comercial Puerto Colón, S/N",
+                addressLocality: "Adeje",
+                addressRegion: "Tenerife",
+                postalCode: "38670",
+                addressCountry: "ES",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 28.0789729,
+                longitude: -16.7360216,
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                opens: "09:00",
+                closes: "18:00"
+              },
+              priceRange: "$$",
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-[#030814] text-gray-100">
         <LanguageProvider>
           {children}
