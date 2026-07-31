@@ -217,6 +217,7 @@ export const MapFooter = () => {
             </span>
           </div>
           <div className="flex gap-6">
+            <a href="/legal" className="hover:text-gray-300 transition-colors">{t.footer.legalNotice || "Legal Notice"}</a>
             <a href="/privacy" className="hover:text-gray-300 transition-colors">{t.footer.privacyPolicy || "Privacy Policy"}</a>
             <a href="/terms" className="hover:text-gray-300 transition-colors">{t.footer.termsOfService || "Terms of Service"}</a>
           </div>

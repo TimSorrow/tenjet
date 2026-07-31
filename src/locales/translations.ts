@@ -112,7 +112,16 @@ export const translations = {
       policyText: "Free cancellations up to 24 hours before departure. In case of poor sea conditions, we offer full refunds or alternative dates. All drivers must be 16+ (parental consent required for under 18s). Passengers can be 8+.",
       allRights: "All rights reserved. Designed for maximum adrenaline.",
       privacyPolicy: "Privacy Policy",
-      termsOfService: "Terms of Service"
+      termsOfService: "Terms of Service",
+      legalNotice: "Legal Notice"
+    },
+    cookieBanner: {
+      message: "We use strictly necessary cookies to ensure the basic functionality of the website. We do not use third-party tracking or marketing cookies.",
+      accept: "Accept",
+      policy: "Cookie Policy"
+    },
+    bookingForms: {
+      whatsappConsent: "By clicking this button, you agree to our Privacy Policy and acknowledge that your data will be processed via WhatsApp (Meta) to manage your booking."
     }
   },
   es: {
@@ -228,7 +237,16 @@ export const translations = {
       policyText: "Cancelaciones gratuitas hasta 24 horas antes. En caso de mal estado del mar, se ofrece reembolso completo o cambio de fecha. Pilotos mayores de 16 años (con consentimiento paterno para menores de 18). Acompañantes mayores de 8 años.",
       allRights: "Todos los derechos reservados. Diseñado para la máxima adrenalina.",
       privacyPolicy: "Política de Privacidad",
-      termsOfService: "Términos de Servicio"
+      termsOfService: "Términos de Servicio",
+      legalNotice: "Aviso Legal"
+    },
+    cookieBanner: {
+      message: "Utilizamos cookies estrictamente necesarias para garantizar el funcionamiento básico del sitio web. No utilizamos cookies de seguimiento o marketing de terceros.",
+      accept: "Aceptar",
+      policy: "Política de Cookies"
+    },
+    bookingForms: {
+      whatsappConsent: "Al hacer clic en este botón, aceptas nuestra Política de Privacidad y reconoces que tus datos serán procesados a través de WhatsApp (Meta) para gestionar tu reserva."
     }
   }
 };

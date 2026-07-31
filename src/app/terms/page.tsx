@@ -42,7 +42,15 @@ export default function TermsOfService() {
               </ul>
 
               <h2 className="text-2xl font-heading font-bold text-white mt-8 mb-4">4. Responsabilidad y Daños</h2>
-              <p>Nuestras tarifas incluyen seguro de responsabilidad civil obligatoria. Sin embargo, el cliente es económicamente responsable de cualquier daño causado a la moto de agua como resultado de conducción imprudente, colisiones por no mantener la distancia de seguridad, o por no seguir las directrices del instructor.</p>
+              <p>Nuestras tarifas incluyen seguro de responsabilidad civil obligatoria provisto por el operador final. Sin embargo, el cliente es económicamente responsable de cualquier daño causado a la moto de agua como resultado de conducción imprudente, colisiones por no mantener la distancia de seguridad, o por no seguir las directrices del instructor.</p>
+
+              <h2 className="text-2xl font-heading font-bold text-white mt-8 mb-4">5. Papel de Intermediario y Limitación de Responsabilidad</h2>
+              <p>EXCURSION PHOTO SERVICE, S.L. (operador de tenjet.club) actúa <strong>exclusivamente como agente intermediario de reservas</strong>. Al confirmar su reserva, usted acepta que:</p>
+              <ul className="list-disc pl-6 space-y-2 mt-2">
+                <li>Nuestra responsabilidad se limita estrictamente a la gestión del proceso de reserva y comunicación inicial.</li>
+                <li>La ejecución real de la excursión, el mantenimiento de los equipos, el cumplimiento de las normas de seguridad marítima y la cobertura del seguro (Seguro de Responsabilidad Civil) son responsabilidad <strong>exclusiva y total de la empresa operadora final</strong> que proporciona la actividad.</li>
+                <li>EXCURSION PHOTO SERVICE, S.L. queda eximida de cualquier responsabilidad civil, penal o financiera derivada de accidentes, lesiones, pérdida de pertenencias o incumplimientos de servicio durante el transcurso de la actividad en el mar.</li>
+              </ul>
             </div>
           ) : (
             <div className="space-y-6 text-gray-300 font-sans leading-relaxed">
@@ -72,7 +80,15 @@ export default function TermsOfService() {
               </ul>
 
               <h2 className="text-2xl font-heading font-bold text-white mt-8 mb-4">4. Liability and Damages</h2>
-              <p>Our rates include mandatory civil liability insurance. However, the customer is financially responsible for any damages caused to the jet ski as a result of reckless driving, collisions due to not keeping a safe distance, or failing to follow the instructor's guidelines.</p>
+              <p>Our rates include mandatory civil liability insurance provided by the final operator. However, the customer is financially responsible for any damages caused to the jet ski as a result of reckless driving, collisions due to not keeping a safe distance, or failing to follow the instructor's guidelines.</p>
+
+              <h2 className="text-2xl font-heading font-bold text-white mt-8 mb-4">5. Intermediary Role & Limitation of Liability</h2>
+              <p>EXCURSION PHOTO SERVICE, S.L. (operator of tenjet.club) acts <strong>strictly as a booking intermediary agent</strong>. By confirming your booking, you agree that:</p>
+              <ul className="list-disc pl-6 space-y-2 mt-2">
+                <li>Our liability is strictly limited to managing the booking process and initial communication.</li>
+                <li>The actual execution of the excursion, equipment maintenance, compliance with maritime safety regulations, and insurance coverage (Civil Liability) are the <strong>sole and exclusive responsibility of the final operating company</strong> providing the activity.</li>
+                <li>EXCURSION PHOTO SERVICE, S.L. is exempt from any civil, criminal, or financial liability arising from accidents, injuries, loss of belongings, or service failures during the course of the activity at sea.</li>
+              </ul>
             </div>
           )}
         </main>

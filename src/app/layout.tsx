@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Plus_Jakarta_Sans, Hanken_Grotesk, Syncopate } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { CookieBanner } from "@/components/CookieBanner";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -81,6 +82,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#030814] text-gray-100">
         <LanguageProvider>
           {children}
+          <CookieBanner />
         </LanguageProvider>
       </body>
     </html>

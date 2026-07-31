@@ -140,6 +140,18 @@ export const PricingSection = () => {
           })}
         </motion.div>
 
+        {/* WhatsApp Consent Note */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center mb-12"
+        >
+          <p className="text-xs text-gray-500 font-medium px-4">
+            {t.bookingForms?.whatsappConsent || "By clicking to book, you agree to our Privacy Policy and acknowledge your data will be processed via WhatsApp (Meta)."}
+          </p>
+        </motion.div>
+
         {/* Features Included List */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
