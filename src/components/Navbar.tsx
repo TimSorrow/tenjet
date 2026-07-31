@@ -11,9 +11,9 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: t.nav.home, href: "#home" },
-    { name: t.nav.pricing, href: "#pricing" },
-    { name: t.nav.whyUs, href: "#why-us" },
+    { name: t.nav.home, href: "/" },
+    { name: t.nav.pricing, href: "/#pricing" },
+    { name: t.nav.whyUs, href: "/#why-us" },
   ];
 
   const handleLangToggle = () => {
@@ -24,7 +24,7 @@ export const Navbar = () => {
     <nav className="glass-navbar sticky top-0 w-full z-50 px-4 py-1 sm:px-6 lg:px-8 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center group py-0.5">
+        <a href="/" className="flex items-center group py-0.5">
           <div className="relative w-[110px] h-[42px] sm:w-[130px] sm:h-[50px] transition-transform duration-300 group-hover:scale-105">
             <Image
               src="/images/logo.png"

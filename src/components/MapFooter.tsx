@@ -59,7 +59,7 @@ export const MapFooter = () => {
           
           {/* Logo & Description */}
           <div className="lg:col-span-4 space-y-6">
-            <a href="#home" className="flex items-center group">
+            <a href="/" className="flex items-center group">
               <div className="relative w-[130px] h-[50px] transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/images/logo.png"
@@ -101,22 +101,22 @@ export const MapFooter = () => {
               </h4>
               <ul className="space-y-3 text-sm font-medium">
                 <li>
-                  <a href="#home" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="/" className="text-gray-400 hover:text-white transition-colors">
                     {t.nav.home}
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">
                     {t.nav.pricing}
                   </a>
                 </li>
                 <li>
-                  <a href="#why-us" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="/#why-us" className="text-gray-400 hover:text-white transition-colors">
                     {t.nav.whyUs}
                   </a>
                 </li>
                 <li>
-                  <a href="#booking" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="/#booking" className="text-gray-400 hover:text-white transition-colors">
                     {t.nav.booking}
                   </a>
                 </li>
