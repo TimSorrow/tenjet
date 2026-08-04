@@ -176,19 +176,19 @@ export const MapFooter = () => {
           </h4>
           <div className="relative w-full h-[280px] sm:h-[350px] rounded-3xl overflow-hidden border border-white/5 shadow-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.849132104523!2d-16.736021623724613!3d28.078972875971434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a97de015c92cb%3A0x6b7725902096bb79!2sPuerto%20Col%C3%B3n!5e0!3m2!1sen!2ses!4v1710000000000!5m2!1sen!2ses"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.758364858889!2d-16.7380061!3d28.0796643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a97960a50de21%3A0x9227fbcc3cf76749!2sTenJet%20%E2%80%94%20Jet%20Ski%20Rental%20Puerto%20Col%C3%B3n!5e0!3m2!1sen!2ses!4v1710000000000!5m2!1sen!2ses"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Google Map Puerto Colón Marina"
+              title="Google Map TenJet"
               className="grayscale contrast-125 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
             />
             {/* Float Address Card Overlay */}
             <a
-              href="https://www.google.com/maps/place/Puerto+Col%C3%B3n/@28.0789729,-16.7360216,17z/data=!4m6!3m5!1s0xc6a97de015c92cb:0x6b7725902096bb79!8m2!3d28.0789729!4d-16.7334467!16s%2Fg%2F11b6s60q1j"
+              href="https://maps.app.goo.gl/8nT8FR1M1cLrptqX9"
               target="_blank"
               rel="noopener noreferrer"
               className="absolute bottom-4 left-4 right-4 sm:right-auto bg-black/85 border border-white/5 hover:border-cyan-500/30 backdrop-blur-md p-4 rounded-2xl max-w-xs shadow-2xl transition-colors group/mapcard cursor-pointer"
