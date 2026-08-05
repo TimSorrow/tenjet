@@ -39,7 +39,7 @@ export const MapFooter = () => {
   const { t } = useTranslation();
 
   const socialLinks = [
-    { name: "Instagram", href: "https://instagram.com", icon: InstagramIcon },
+    { name: "Instagram", href: "https://www.instagram.com/tenjet.club", icon: InstagramIcon },
     { name: "Facebook", href: "https://facebook.com", icon: FacebookIcon },
   ];
 
