@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   keywords: ["jet ski puerto colon", "jet ski rent costa adeje", "tenerife jet ski safari", "water sports tenerife", "puerto colon jet ski rental"],
   authors: [{ name: "tenjet.club Rentals" }],
   robots: "index, follow",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Jet Ski Rental Puerto Colón | No License Required",
     description: "Rent a premium Jet Ski in Puerto Colón, Tenerife. No license needed! Safe, fast, and unforgettable experience.",
